@@ -19,7 +19,7 @@
       <ngx-masonry class="container--project-items" [options]="masonryOptions">
         <div ngxMasonryItem class="masonry-item" *ngFor="let item of masonryItems">
           <div class="item-container">
-            <img [src]="'../../assets/imgs/projects/'+item.imageName+'.jpg'" />
+            <img [src]="'./assets/imgs/projects/'+item.imageName+'.jpg'" />
             <div class="mask-info">
               <span class="title">{{item.title}}</span>
             </div>
