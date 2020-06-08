@@ -1,0 +1,202 @@
+
+#homepage {
+  width: 100%;
+  min-height: 100vh;
+
+  section {
+    flex: 1 1 auto;
+
+    &.header {
+      height: 225px;
+      margin: 0;
+
+      &__transparent {
+
+      }
+
+      .container {
+        height: 225px;
+        width: 100%;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        align-content: center;
+      }
+
+      .brand {
+        width: 100%;
+        font-family: "Silk Serif";
+        font-weight: normal;
+        font-size: 70px;
+        line-height: 70px;
+        margin-bottom: 25px;
+        color: $main-color;
+
+        &__sub {
+          font-family: Roboto;
+          font-weight: 300;
+          font-size: 40px;
+          line-height: 40px;
+          color: $main-color;
+        }
+      }
+
+      .nav-button {
+        &__inverted {
+          position: absolute;
+          top: calc(50% - 50px);
+          right: 10px;
+        }
+      }
+    }
+
+    &.body {
+      height: 100%;
+      min-height: calc(100vh - (225px + 175px));
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &--project--menu {
+          width: 100%;
+          text-align: center;
+          margin-top: 25px;
+          margin-bottom: 70px;
+
+          span {
+            color: $main-color;
+            font-family: Roboto;
+            font-weight: normal;
+            font-size: 20px;
+          }
+          .menu-item {
+            cursor: pointer;
+            position: relative;
+          }
+
+          .isActive {
+            .menu-item {
+              font-weight: bold;
+            }
+          }
+
+          .menu-separator {
+            margin: 0 10px;
+          }
+        }
+
+        ngx-masonry {
+          width: 100%;
+        };
+      }
+    }
+
+    &.footer {
+      height: 175px;
+      background-color: $main-color;
+      color: white;
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        height: 100%;
+
+        .legals, .pigeon-me, .socials {
+          flex: 1 1 33%;
+        }
+
+        .legals {
+          font-size: 15px;
+          font-family: Roboto;
+          font-weight: normal;
+        }
+
+        .pigeon-me {
+          font-size: 20px;
+          font-family: Roboto;
+          font-weight: normal;
+          .by-courrier-electronique {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .a { order: 1}
+            .b { order: 2}
+            .c { order: 3}
+            .d { order: 4}
+            .e { order: 5}
+            .f { order: 6}
+            .g { order: 7}
+          }
+          .by-magic {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .a { order: 1}
+            .b { order: 2}
+            .c { order: 3}
+            .d { order: 4}
+            .e { order: 5}
+          }
+        }
+      }
+
+    }
+  }
+}
+
+
+.masonry-item {
+  width: 345px;
+  margin-bottom: 50px;
+  .item-container {
+    transition: all 0.2s ease;
+    position: relative;
+
+    img {
+      box-shadow: 0 7px 10px -7px black;
+    }
+
+    .mask-info {
+      width: 100%;
+      height: calc(100% - 3px);
+      opacity: 0;
+      transition: all 0.2s ease;
+      background-color: transparentize($main-color, 0.4);
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      .title {
+        display: block;
+        padding: 15px;
+        height: calc(100% - 30px);
+        color: white;
+        font-family: Roboto;
+        font-weight: normal;
+        font-size: 17px;
+      }
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+
+      .mask-info {
+        opacity: 1;
+      }
+    }
+  }
+
+}

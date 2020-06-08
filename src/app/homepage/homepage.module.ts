@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomepageComponent } from './homepage.component';
 import {RouterModule, Routes} from '@angular/router';
+import {NgxMasonryModule} from 'ngx-masonry';
+
 
 const routes: Routes = [
   {
@@ -10,19 +12,12 @@ const routes: Routes = [
   }
 ];
 
-const menuItems = [
-  { name: 'Tout', projectType: '' },
-  { name: 'Edition', projectType: '' },
-  { name: 'Identité visuelle', projectType: '' },
-  { name: 'Print', projectType: '' },
-  { name: 'Digital', projectType: '' },
-];
-
 @NgModule({
   declarations: [HomepageComponent],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    NgxMasonryModule
   ]
 })
 export class HomepageModule { }

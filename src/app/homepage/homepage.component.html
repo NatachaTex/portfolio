@@ -1,18 +1,58 @@
 <div id="homepage">
-  <section class="header__transparent">
-    <h1 class="brand">Natacha Texier</h1>
-    <h2 class="sub-brand">Design graphique</h2>
-    <div class="nav-button__inverted">À propos</div>
+  <section class="header header__transparent">
+    <div class="container">
+      <h1 class="brand">Natacha Texier</h1>
+      <h2 class="brand__sub">Design graphique</h2>
+      <div class="nav-button nav-button__inverted">À propos</div>
+    </div>
   </section>
   <section class="body">
-    <div class="container--project">
+    <div class="container">
       <div class="container--project--menu">
+          <span *ngFor="let menuItem of menuItems; let i = index" (click)="changeActiveItem(i)"
+                [class]="menuItem.isActive ? 'isActive' : ''"
+          >
+            <span class="menu-item">{{menuItem.name}}</span>
+            <span *ngIf="i < menuItems.length - 1" class="menu-separator">|</span>
+        </span>
       </div>
-      <div class="container--project-items"></div>
+      <ngx-masonry class="container--project-items" [options]="masonryOptions">
+        <div ngxMasonryItem class="masonry-item" *ngFor="let item of masonryItems">
+          <div class="item-container">
+            <img [src]="'../../assets/imgs/projects/'+item.imageName+'.jpg'" />
+            <div class="mask-info">
+              <span class="title">{{item.title}}</span>
+            </div>
+          </div>
+        </div>
+      </ngx-masonry>
     </div>
   </section>
 
-  <section class="footer__transparent">
-
+  <section class="footer footer__transparent">
+    <div class="container">
+      <div class="legals">Tous droits réservés,<br/> Natacha Texier - 2020</div>
+      <div class="pigeon-me">
+        <div class="by-courrier-electronique">
+          <span class="g">com</span>
+          <span class="c">pro</span>
+          <span class="e">hotmail</span>
+          <span class="b">.</span>
+          <span class="d">@</span>
+          <span class="f">.</span>
+          <span class="a">natacha</span>
+        </div>
+        <div class="by-magic">
+          <span class="d">11&nbsp;</span>
+          <span class="b">13&nbsp;</span>
+          <span class="c">26&nbsp;</span>
+          <span class="e">00</span>
+          <span class="a">06&nbsp;</span>
+        </div>
+        <div>
+        </div>
+      </div>
+      <div class="socials"></div>
+    </div>
   </section>
 </div>
