@@ -1,0 +1,22 @@
+.nav-button {
+  height: 50px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-family: Roboto;
+  font-weight: normal;
+  cursor: pointer;
+
+  &__inverted {
+    border: 2px solid $main-color;
+    color: $main-color;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: white;
+      background-color: $main-color;
+    }
+  }
+}
