@@ -12,11 +12,14 @@
   &__inverted {
     border: 2px solid $main-color;
     color: $main-color;
-    transition: all 0.2s ease;
+    transition: background-color 0.2s ease;
 
-    &:hover {
-      color: white;
-      background-color: $main-color;
+    @media screen and (min-width: 1201px) {
+      &:hover {
+        color: white;
+        background-color: $main-color;
+      }
     }
+
   }
 }
