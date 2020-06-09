@@ -11,7 +11,7 @@ export class HomepageComponent implements OnInit {
 
   public menuItems = [
     { name: 'Tout', projectType: 'all', isActive: true },
-    { name: 'Edition', projectType: 'edit', isActive: false },
+    { name: 'Édition', projectType: 'edit', isActive: false },
     { name: 'Identité visuelle', projectType: 'visual', isActive: false },
     { name: 'Print', projectType: 'print', isActive: false },
     // { name: 'Digital', projectType: 'tech', isActive: false },
