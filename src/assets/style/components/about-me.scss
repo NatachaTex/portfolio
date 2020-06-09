@@ -1,0 +1,88 @@
+
+#about-me {
+  width: 100%;
+  min-height: 100vh;
+
+  section {
+    flex: 1 1 auto;
+
+
+    &.body {
+      height: 100%;
+
+      .about-me-container {
+        display: flex;
+        align-items: flex-start;
+        align-content: flex-start;
+        min-height: calc(100vh - (225px + 175px + 125px));
+        padding: 75px 15px 50px 15px;
+        @media screen and (max-width: 900px) {
+          display: block;
+        }
+
+        .profile {
+          &--image {
+            margin-right: 75px;
+            @media screen and (max-width: 900px) {
+              float: left;
+              margin-right: 35px;
+              margin-bottom: 30px;
+            }
+          }
+          &--description {
+            .description {
+              &--title {
+                font-family: Silk Serif;
+                font-weight: normal;
+                font-size: 50px;
+                color: $main-color;
+                margin-bottom: 25px;
+                margin-top: -50px;
+              }
+
+              &--body {
+                max-width: 700px;
+                margin-left: 45px;
+                font-size: 15px;
+                font-weight: normal;
+                font-family: Montserrat;
+              }
+
+              &--download {
+                padding-top: 55px;
+                position: relative;
+                &:after {
+                  display: block;
+                  position: absolute;
+                  bottom: -2px;
+                  left: 45px;
+                  width: 145px;
+                  height: 2px;
+                  content: '';
+                  border-bottom: solid 1px $main-color;
+                  transform: scaleX(0);
+                  transition: transform 250ms ease-in-out;
+                }
+                &:hover {
+                  &:after {
+                    transform: scale(1);
+                  }
+                }
+                a {
+                  &:link, &:active, &:visited {
+                    margin-left: 45px;
+                    color: black !important;
+                    text-decoration: none;
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-weight: bold;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

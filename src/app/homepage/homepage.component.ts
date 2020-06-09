@@ -74,7 +74,7 @@ export class HomepageComponent implements OnInit {
 
 
   public masonryOptions: NgxMasonryOptions = {
-    gutter: 50,
+    gutter: 82,
     fitWidth: true
   };
 

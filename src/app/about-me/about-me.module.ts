@@ -1,25 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomepageComponent } from './homepage.component';
 import {RouterModule, Routes} from '@angular/router';
-import {NgxMasonryModule} from 'ngx-masonry';
+import {AboutMeComponent} from './about-me.component';
 import {SharedModule} from '../shared/shared.module';
 
 
 const routes: Routes = [
   {
     path: '',
-    component: HomepageComponent
+    component: AboutMeComponent
   }
 ];
 
 @NgModule({
-  declarations: [HomepageComponent],
+  declarations: [AboutMeComponent],
   imports: [
     CommonModule,
-    NgxMasonryModule,
-    SharedModule,
     RouterModule.forChild(routes),
+    SharedModule
   ]
 })
-export class HomepageModule { }
+export class AboutMeModule { }

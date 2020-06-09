@@ -1,0 +1,108 @@
+.footer {
+  height: 175px;
+  background-color: $main-color;
+  color: white;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+
+    .legals, .pigeon-me, .socials {
+      flex: 1 1 calc(33% - 30px);
+    }
+
+    .legals {
+      font-size: 14px;
+      font-family: Roboto;
+      font-weight: normal;
+      padding-left: 15px;
+      @media screen and (max-width: 900px) {
+        font-size: 12px;
+        line-height: 12px;
+      }
+    }
+
+    .pigeon-me {
+      font-size: 18px;
+      font-family: Roboto;
+      font-weight: normal;
+      @media screen and (max-width: 900px) {
+        font-size: 16px;
+        line-height: 16px;
+      }
+
+      @media screen and (max-width: 600px) {
+        font-size: 14px;
+        line-height: 14px;
+      }
+      .by-courrier-electronique {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .a { order: 1}
+        .b { order: 2}
+        .c { order: 3}
+        .d { order: 4}
+        .e { order: 5}
+        .f { order: 6}
+        .g { order: 7}
+      }
+      .by-magic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .a { order: 1}
+        .b { order: 2}
+        .c { order: 3}
+        .d { order: 4}
+        .e { order: 5}
+      }
+    }
+
+    .hometown {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .socials {
+    padding-right: 15px;
+    display: flex;
+    justify-content: flex-end;
+
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    img {
+      width: 50px;
+      height: 50px;
+      @media screen and (max-width: 900px) {
+        width: 25px;
+        height: 25px;
+      }
+
+      &:first-child{
+        margin-right: 25px;
+        @media screen and (max-width: 900px) {
+          margin: 0 0 25px 0;
+        }
+      }
+
+      &:last-child {
+        margin-left: 25px;
+        @media screen and (max-width: 900px) {
+          margin: 25px 0 0 0;
+        }
+      }
+    }
+  }
+}

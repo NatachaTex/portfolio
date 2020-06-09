@@ -7,6 +7,11 @@ const routes: Routes = [
     path: '',
     pathMatch: 'full',
     loadChildren: () => import('./homepage/homepage.module').then(m => m.HomepageModule)
+  },
+  {
+    path: 'a-propos',
+    pathMatch: 'full',
+    loadChildren: () => import('./about-me/about-me.module').then(m => m.AboutMeModule)
   }
 ];
 

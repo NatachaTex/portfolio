@@ -1,0 +1,90 @@
+.header {
+  height: 225px;
+  margin: 0;
+
+  &__transparent {
+    background-color: transparent;
+    .brand, .brand__sub {
+      color: $main-color;
+    }
+  }
+
+  &__background {
+    background-color: $main-color;
+    .brand, .brand__sub {
+      color: white;
+    }
+
+    .nav-button__inverted {
+      border-color: white;
+      color: white;
+
+      &:hover {
+        color: $main-color;
+        background-color: white;
+      }
+    }
+  }
+
+  .container {
+    height: 225px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+  }
+
+  .brand {
+    width: 100%;
+    font-family: "Silk Serif";
+    font-weight: normal;
+    font-size: 70px;
+    line-height: 70px;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 600px) {
+      font-size: 50px;
+      line-height: 50px;
+    }
+
+    &__sub {
+      font-family: Roboto;
+      font-weight: 300;
+      font-size: 40px;
+      line-height: 40px;
+      @media screen and (max-width: 900px) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      @media screen and (max-width: 600px) {
+        font-size: 20px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .nav-button {
+    position: absolute;
+    top: calc(50% - 50px);
+    right: 7px;
+
+    @media screen and (max-width: 900px) {
+      position: initial;
+      width: 295px;
+      height: 40px;
+      top: calc(50% - 40px);
+    }
+
+
+    @media screen and (max-width: 600px) {
+      width: 150px;
+      height: 35px;
+      font-size: 14px;
+    }
+  }
+}
