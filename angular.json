@@ -140,8 +140,13 @@
               "devServerTarget": "natachaPortfolio:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "natachaPortfolio"
 }

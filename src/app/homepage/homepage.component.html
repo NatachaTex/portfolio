@@ -22,6 +22,10 @@
             <img [src]="'./assets/imgs/projects/'+item.imageName+'.jpg'" />
             <div class="mask-info">
               <span class="title">{{item.title}}</span>
+              <span class="details">
+                <span *ngIf="item.place">{{item.place}},<br/></span>
+                <span>{{item.date}}</span>
+              </span>
             </div>
           </div>
         </div>
@@ -48,6 +52,9 @@
           <span class="c">26&nbsp;</span>
           <span class="e">00</span>
           <span class="a">06&nbsp;</span>
+        </div>
+        <div>
+          <span class="hometown">Paris - France</span>
         </div>
         <div>
         </div>

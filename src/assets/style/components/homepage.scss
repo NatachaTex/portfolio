@@ -32,8 +32,13 @@
         font-weight: normal;
         font-size: 70px;
         line-height: 70px;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
         color: $main-color;
+
+        @media screen and (max-width: 600px) {
+          font-size: 50px;
+          line-height: 50px;
+        }
 
         &__sub {
           font-family: Roboto;
@@ -41,14 +46,33 @@
           font-size: 40px;
           line-height: 40px;
           color: $main-color;
+          @media screen and (max-width: 900px) {
+            width: 100%;
+            margin-bottom: 20px;
+          }
+
+          @media screen and (max-width: 600px) {
+            font-size: 20px;
+            line-height: 20px;
+          }
         }
       }
 
       .nav-button {
-        &__inverted {
-          position: absolute;
-          top: calc(50% - 50px);
-          right: 10px;
+        position: absolute;
+        top: calc(50% - 50px);
+        right: 40px;
+
+        @media screen and (max-width: 900px) {
+          position: initial;
+          width: 295px;
+        }
+
+
+        @media screen and (max-width: 600px) {
+          width: 150px;
+          height: 35px;
+          font-size: 14px;
         }
       }
     }
@@ -68,7 +92,7 @@
           width: 100%;
           text-align: center;
           margin-top: 25px;
-          margin-bottom: 70px;
+          margin-bottom: 60px;
 
           span {
             color: $main-color;
@@ -79,11 +103,15 @@
           .menu-item {
             cursor: pointer;
             position: relative;
+
+            &:hover {
+              text-shadow: 0 0 .65px #333, 0 0 .65px #333;
+            }
           }
 
           .isActive {
             .menu-item {
-              font-weight: bold;
+              text-shadow: 0 0 .65px #333, 0 0 .65px #333;
             }
           }
 
@@ -112,19 +140,33 @@
         height: 100%;
 
         .legals, .pigeon-me, .socials {
-          flex: 1 1 33%;
+          flex: 1 1 calc(33% - 30px);
         }
 
         .legals {
-          font-size: 15px;
+          font-size: 14px;
           font-family: Roboto;
           font-weight: normal;
+          padding-left: 15px;
+          @media screen and (max-width: 900px) {
+            font-size: 12px;
+            line-height: 12px;
+          }
         }
 
         .pigeon-me {
-          font-size: 20px;
+          font-size: 18px;
           font-family: Roboto;
           font-weight: normal;
+          @media screen and (max-width: 900px) {
+            font-size: 16px;
+            line-height: 16px;
+          }
+
+          @media screen and (max-width: 600px) {
+            font-size: 14px;
+            line-height: 14px;
+          }
           .by-courrier-electronique {
             display: flex;
             justify-content: center;
@@ -150,8 +192,17 @@
             .e { order: 5}
           }
         }
+
+        .hometown {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
       }
 
+      .socials {
+        padding-right: 15px;
+      }
     }
   }
 }
@@ -173,21 +224,35 @@
       height: calc(100% - 3px);
       opacity: 0;
       transition: all 0.2s ease;
-      background-color: transparentize($main-color, 0.4);
+      background-color: $main-color;
       position: absolute;
       top: 0;
       left: 0;
-
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+    }
       .title {
         display: block;
         padding: 15px;
-        height: calc(100% - 30px);
         color: white;
         font-family: Roboto;
-        font-weight: normal;
-        font-size: 17px;
+        width: 100%;
+        align-self: flex-start;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 22px;
       }
-    }
+
+      .details {
+        display: block;
+        color: white;
+        width: 100%;
+        align-self: flex-end;
+        text-align: right;
+        padding: 15px;
+        padding-left: 33%;
+      }
 
     &:hover {
       transform: scale(1.1);

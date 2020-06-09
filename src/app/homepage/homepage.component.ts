@@ -18,13 +18,55 @@ export class HomepageComponent implements OnInit {
   ];
 
   private initialProjectDataSource = [
-    { title: 'Catalogue de formations & autres supports de communication - Dulala', projectType: 'print', imageName: 'dulala_thumb' },
-    { title: 'Campagne de sensibilisation à l\'addiction aux achats', projectType: 'print', imageName: 'hyperconso_thumb' },
-    { title: 'évènement 400 ans de La Fontaine - Commune de Château-Thierry', projectType: 'print', imageName: 'lafontaine_thumb' },
-    { title: 'Naming & identité visuelle - écobul', projectType: 'visual', imageName: 'ecocotte_thumb' },
-    { title: 'Identité visuelle & charte graphique - La cité du développement durable', projectType: 'visual', imageName: 'cdd_thumb' },
-    { title: 'Réalité Parallèle micro-édition - Les éditions Extensibles', projectType: 'edit', imageName: 'ourcq_thumb' },
-    { title: 'Journée portes ouvertes des ateliers d\'artistes de Belleville - Artame Gallery', projectType: 'print', imageName: 'artame_thumb' },
+    {
+      title: 'Catalogue de formations & divers supports de communication',
+      place: 'Dulala',
+      date: '2020',
+      projectType: 'print',
+      imageName: 'dulala_thumb'
+    },
+    {
+      title: 'Campagne de sensibilisation à l\'addiction aux achats',
+      place: null,
+      date: '2020',
+      projectType: 'print',
+      imageName: 'hyperconso_thumb'
+    },
+    {
+      title: 'Évènement 400 ans de La Fontaine',
+      place: 'Château-Thierry',
+      date: '2020',
+      projectType: 'print',
+      imageName: 'lafontaine_thumb'
+    },
+    {
+      title: 'Naming & identité visuelle',
+      place: 'Écobul',
+      date: '2019',
+      projectType: 'visual',
+      imageName: 'ecocotte_thumb'
+    },
+    {
+      title: 'Identité visuelle & charte graphique',
+      place: 'Cité du développement durable',
+      date: '2019',
+      projectType: 'visual',
+      imageName: 'cdd_thumb'
+    },
+    {
+      title: 'Réalité Parallèle micro-édition',
+      place: 'Les éditions extensibles',
+      date: '2019',
+      projectType: 'edit',
+      imageName: 'ourcq_thumb'
+    },
+    {
+      title: 'JPO des ateliers d\'artistes de Belleville',
+      place: 'Artame Gallery',
+      date: '2018',
+      projectType: 'print',
+      imageName: 'artame_thumb'
+    },
   ];
 
   public masonryItems = null;
