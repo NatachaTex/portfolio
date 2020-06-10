@@ -78,10 +78,11 @@ export class HomepageComponent implements OnInit {
     fitWidth: true
   };
 
-  constructor() { }
+  constructor() {
+    this.masonryItems = this.initialProjectDataSource;
+  }
 
   ngOnInit() {
-    this.masonryItems = this.initialProjectDataSource;
   }
 
   changeActiveItem(itemTypeIndex) {

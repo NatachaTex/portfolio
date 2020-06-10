@@ -14,8 +14,8 @@
         display: flex;
         align-items: flex-start;
         align-content: flex-start;
-        min-height: calc(100vh - (225px + 135px + 125px));
-        padding: 75px 15px 50px 15px;
+        min-height: calc(100vh - (215px + 135px + 145px));
+        padding: 70px 15px 70px 15px;
         @media screen and (max-width: 900px) {
           display: block;
         }
@@ -23,10 +23,17 @@
         .profile {
           &--image {
             margin-right: 75px;
+            height: 430px;
             @media screen and (max-width: 900px) {
               float: left;
               margin-right: 35px;
               margin-bottom: 30px;
+            }
+
+            @media screen and (max-width: 400px) {
+              img {
+                width: 290px;
+              }
             }
           }
           &--description {
@@ -37,7 +44,7 @@
                 font-size: 50px;
                 color: $main-color;
                 margin-bottom: 25px;
-                margin-top: -50px;
+                margin-top: -40px;
               }
 
               &--body {
@@ -49,7 +56,7 @@
               }
 
               &--download {
-                margin-top: 55px;
+                margin-top: 25px;
                 margin-left: 45px;
                 position: relative;
                 &:after {
