@@ -63,12 +63,20 @@
 .masonry-item {
   width: 345px;
   margin-bottom: 50px;
+
+  @media screen and (max-width: 400px) {
+    width: 300px;
+  }
+
   .item-container {
     transition: all 0.2s ease;
     position: relative;
 
     img {
       box-shadow: 0 7px 10px -7px black;
+      @media screen and (max-width: 400px) {
+        width: 300px;
+      }
     }
 
     .mask-info {

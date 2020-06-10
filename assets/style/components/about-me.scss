@@ -29,6 +29,12 @@
               margin-right: 35px;
               margin-bottom: 30px;
             }
+
+            @media screen and (max-width: 400px) {
+              img {
+                width: 290px;
+              }
+            }
           }
           &--description {
             .description {
