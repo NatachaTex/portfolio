@@ -1,0 +1,208 @@
+#project-page {
+
+
+  section {
+    &.image-header {
+      margin-bottom: 100px;
+      max-height: 400px;
+
+      @media screen and (max-width: 920px) {
+        margin-bottom: 75px;
+      }
+
+      img {
+        min-height: 300px;
+        object-fit: cover;
+        max-height: 400px;
+        height: 100%;
+      }
+
+      &.full-width {
+        position: relative;
+
+        .quality-mask {
+          width: 100%;
+          min-width: 100%;
+          height: 100%;
+          min-height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 1;
+          background-color: transparentize(black, 0.9);
+          max-height: 400px;
+        }
+
+        .nav-button-container {
+          position: absolute;
+          top: 57.5px;
+          left: 0;
+          display: flex;
+          justify-content: flex-end;
+          z-index: 2;
+          max-width: calc(1200px + 350px);
+          width: 100%;
+        }
+
+        .nav-button {
+          margin-right: 15px;
+        }
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+
+    &.body {
+      .container {
+        .project {
+          &-title {
+            padding: 0 15px;
+            margin-bottom: 20px;
+
+            span {
+              font-family: Roboto;
+              font-size: 34px;
+              font-weight: bold;
+            }
+          }
+
+          &-container--infos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 0 15px;
+
+            .project {
+              &--description {
+                flex: 1 1 66%;
+                max-width: 66%;
+                padding-right: 30px;
+
+                span {
+                  font-family: Montserrat;
+                  font-size: 15px;
+                  line-height: 21px;
+                }
+              }
+
+              &--additionnals {
+                flex: 1 1 auto;
+                max-width: 33%;
+
+                @media screen and (max-width: 920px) {
+                  margin-top: 30px;
+                }
+
+                .context {
+                  &--title {
+                    margin-bottom: 10px;
+
+                    span {
+                      font-family: Montserrat;
+                      font-size: 15px;
+                      line-height: 20px;
+                      font-weight: bold;
+                    }
+                  }
+
+                  &--content {
+                    margin-bottom: 25px;
+
+                    span {
+                      font-family: Montserrat;
+                      font-size: 15px;
+                      line-height: 20px;
+                    }
+                  }
+                }
+
+                .missions {
+                  &--title {
+                    margin-bottom: 10px;
+
+                    span {
+                      font-family: Montserrat;
+                      font-size: 15px;
+                      line-height: 20px;
+                      font-weight: bold;
+                    }
+                  }
+
+                  &--content {
+                    span {
+                      font-family: Montserrat;
+                      font-size: 15px;
+                      line-height: 20px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          &-container--images {
+            .image-gutterer {
+              margin-bottom: 100px;
+
+              &:first-child {
+                margin-top: 100px;
+              }
+
+              &:last-child {
+                margin-bottom: 75px;
+              }
+            }
+
+            .image-full {
+              img {
+                max-width: 1200px;
+                width: 100%;
+              }
+            }
+
+            .image-small {
+              img {
+                max-width: 660px;
+                width: 100%;
+              }
+            }
+
+            .image-centered {
+              display: flex;
+              justify-content: center;
+              align-content: center;
+            }
+
+            .image-two-columns {
+              &__left, &__right {
+                @media screen and (max-width: 1049px){
+                  display: flex;
+                  justify-content: center;
+                  align-content: center;
+                }
+              }
+
+
+              @media screen and (min-width: 1050px) {
+                &__left {
+                  float: left;
+                }
+
+                &__right {
+                  float: right;
+                }
+              }
+            }
+          }
+        }
+
+        .nav-button {
+          margin: 0 15px 75px auto;
+        }
+      }
+    }
+  }
+}

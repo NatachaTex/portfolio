@@ -1,5 +1,6 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
+import {AfterViewInit, Component, OnInit, ViewChild} from '@angular/core';
 import { NgxMasonryOptions, NgxMasonryComponent } from 'ngx-masonry';
+import {DeviceDetectorService} from 'ngx-device-detector';
 
 
 @Component({
@@ -23,53 +24,62 @@ export class HomepageComponent implements OnInit {
       place: 'Dulala',
       date: '2020',
       projectType: 'print',
-      imageName: 'dulala_thumb'
+      imageName: 'dulala_thumb',
+      routerLinkName: '/projets/'
     },
     {
       title: 'Campagne de sensibilisation à l\'addiction aux achats',
       place: null,
       date: '2020',
       projectType: 'print',
-      imageName: 'hyperconso_thumb'
+      imageName: 'hyperconso_thumb',
+      routerLinkName: '/projets/'
     },
     {
       title: 'Évènement 400 ans de La Fontaine',
       place: 'Château-Thierry',
       date: '2020',
       projectType: 'print',
-      imageName: 'lafontaine_thumb'
+      imageName: 'lafontaine_thumb',
+      routerLinkName: '/projets/'
     },
     {
       title: 'Naming & identité visuelle',
       place: 'Écobul',
       date: '2019',
       projectType: 'visual',
-      imageName: 'ecocotte_thumb'
+      imageName: 'ecocotte_thumb',
+      routerLinkName: '/projets/'
     },
     {
       title: 'Identité visuelle & charte graphique',
       place: 'Cité du développement durable',
       date: '2019',
       projectType: 'visual',
-      imageName: 'cdd_thumb'
+      imageName: 'cdd_thumb',
+      routerLinkName: 'projets/cite-developpement-durable'
     },
     {
       title: 'Réalité Parallèle micro-édition',
       place: 'Les éditions extensibles',
       date: '2019',
       projectType: 'edit',
-      imageName: 'ourcq_thumb'
+      imageName: 'ourcq_thumb',
+      routerLinkName: '/projets/realite-parallele'
     },
     {
       title: 'JPO des ateliers d\'artistes de Belleville',
       place: 'Artame Gallery',
       date: '2018',
       projectType: 'print',
-      imageName: 'artame_thumb'
+      imageName: 'artame_thumb',
+      routerLinkName: '/projets/'
     },
   ];
 
   public masonryItems = null;
+
+  isDesktop = true;
 
 
 
@@ -78,12 +88,12 @@ export class HomepageComponent implements OnInit {
     fitWidth: true
   };
 
-  constructor() {
+  constructor( private deviceService: DeviceDetectorService) {
     this.masonryItems = this.initialProjectDataSource;
+    this.isDesktop = deviceService.isDesktop();
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   changeActiveItem(itemTypeIndex) {
     let projectTypeToShow = '';

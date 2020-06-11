@@ -12,6 +12,10 @@ const routes: Routes = [
     path: 'a-propos',
     pathMatch: 'full',
     loadChildren: () => import('./about-me/about-me.module').then(m => m.AboutMeModule)
+  },
+  {
+    path: 'projets',
+    loadChildren: () => import('./projects/projects.module').then(m => m.ProjectsModule)
   }
 ];
 

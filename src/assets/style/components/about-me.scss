@@ -14,7 +14,7 @@
         display: flex;
         align-items: flex-start;
         align-content: flex-start;
-        min-height: calc(100vh - (215px + 135px + 145px));
+        min-height: calc(100vh - (215px + 135px + 140px));
         padding: 70px 15px 70px 15px;
         @media screen and (max-width: 900px) {
           display: block;
@@ -53,17 +53,25 @@
                 font-size: 15px;
                 font-weight: normal;
                 font-family: Montserrat;
+
+                @media screen and (max-width: 600px){
+                  margin-left: 0;
+                }
               }
 
               &--download {
                 margin-top: 25px;
                 margin-left: 45px;
                 position: relative;
+                @media screen and (max-width: 600px){
+                  margin-left: 0;
+                }
+
                 &:after {
                   display: block;
                   position: absolute;
                   bottom: -2px;
-                  left: 0px;
+                  left: 0;
                   width: 145px;
                   height: 2px;
                   content: '';
