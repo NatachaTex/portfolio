@@ -61,9 +61,24 @@
             padding: 0 15px;
             margin-bottom: 20px;
 
+            &.has-subtitle {
+              margin-bottom: 0;
+            }
+
             span {
               font-family: Roboto;
               font-size: 34px;
+              font-weight: bold;
+            }
+          }
+
+          &-subtitle {
+            padding-left: 15px;
+            margin-bottom: 20px;
+
+            span {
+              font-family: Roboto;
+              font-size: 20px;
               font-weight: bold;
             }
           }
@@ -81,6 +96,12 @@
                 max-width: 66%;
                 padding-right: 30px;
 
+                @media screen and (max-width: 920px) {
+                  flex: 1 1 100%;
+                  max-width: 100%;
+                  width: 100%;
+                }
+
                 span {
                   font-family: Montserrat;
                   font-size: 15px;
@@ -94,6 +115,8 @@
 
                 @media screen and (max-width: 920px) {
                   margin-top: 30px;
+                  flex: 1 1 100%;
+                  max-width: 100%;
                 }
 
                 .context {
@@ -144,12 +167,14 @@
           }
 
           &-container--images {
+            display: flex;
+            margin-top: 100px;
+            flex-wrap: wrap;
+            max-width: 1170px;
+            margin: 100px auto 0 auto;
+
             .image-gutterer {
               margin-bottom: 100px;
-
-              &:first-child {
-                margin-top: 100px;
-              }
 
               &:last-child {
                 margin-bottom: 75px;
@@ -158,7 +183,7 @@
 
             .image-full {
               img {
-                max-width: 1200px;
+                max-width: 1170px;
                 width: 100%;
               }
             }
@@ -182,17 +207,22 @@
                   display: flex;
                   justify-content: center;
                   align-content: center;
+                  flex: 0 0 100%;
                 }
               }
 
 
               @media screen and (min-width: 1050px) {
                 &__left {
-                  float: left;
+                  flex: 0 0 50%;
+                  display: flex;
+                  justify-content: flex-start;
                 }
 
                 &__right {
-                  float: right;
+                  flex: 0 0 50%;
+                  display: flex;
+                  justify-content: flex-end;
                 }
               }
             }

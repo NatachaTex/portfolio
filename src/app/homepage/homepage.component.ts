@@ -25,7 +25,7 @@ export class HomepageComponent implements OnInit {
       date: '2020',
       projectType: 'print',
       imageName: 'dulala_thumb',
-      routerLinkName: '/projets/'
+      routerLinkName: '/projets/dulala'
     },
     {
       title: 'Campagne de sensibilisation à l\'addiction aux achats',
@@ -73,7 +73,7 @@ export class HomepageComponent implements OnInit {
       date: '2018',
       projectType: 'print',
       imageName: 'artame_thumb',
-      routerLinkName: '/projets/'
+      routerLinkName: '/projets/jpo-ateliers-belleville'
     },
   ];
 
@@ -85,7 +85,7 @@ export class HomepageComponent implements OnInit {
 
   public masonryOptions: NgxMasonryOptions = {
     gutter: 82,
-    fitWidth: true
+    fitWidth: true,
   };
 
   constructor( private deviceService: DeviceDetectorService) {
@@ -93,7 +93,9 @@ export class HomepageComponent implements OnInit {
     this.isDesktop = deviceService.isDesktop();
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+
+  }
 
   changeActiveItem(itemTypeIndex) {
     let projectTypeToShow = '';

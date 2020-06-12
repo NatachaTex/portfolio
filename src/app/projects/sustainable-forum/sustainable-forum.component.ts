@@ -21,6 +21,7 @@ export class SustainableForumComponent implements OnInit {
 
   projectTextualDatas = {
     title: '<span>La cité du développement durable</span>',
+    subtitle: null,
     description: '<span>Implanté au cœur du jardin d’agronomie tropicale de Paris, La cité du développement durable<br/>' +
       'est un pôle unique en France, qui regroupe des organisations actrices du développement durable :<br/>' +
       'instituts de recherches, fonds de dotations, entreprises de l’économie sociale et solidaire...<br/><br/>' +

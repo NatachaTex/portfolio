@@ -14,7 +14,9 @@
   </section>
   <section class="body">
     <div class="container">
-      <div class="project-title" [innerHTML]="projectTextualDatas.title"></div>
+      <div class="project-title" [ngClass]="projectTextualDatas.subtitle ? 'has-subtitle' : ''"
+           [innerHTML]="projectTextualDatas.title"></div>
+      <div class="project-subtitle" *ngIf="projectTextualDatas.subtitle" [innerHTML]="projectTextualDatas.subtitle"></div>
       <div class="project-container--infos">
         <div class="project--description" [innerHTML]="projectTextualDatas.description"></div>
         <div class="project--additionnals">
