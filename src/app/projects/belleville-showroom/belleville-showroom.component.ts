@@ -13,8 +13,8 @@ export class BellevilleShowroomComponent implements OnInit {
   headerImageData = {assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, imageName: 'header.jpg'};
 
   imageDatas = [
-    { assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, pictureName: 'picture-001.jpg', imageContainerClass: `${IMAGE_TWO_COLUMNS_LEFT_CLASS}`},
-    { assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, pictureName: 'picture-002.jpg', imageContainerClass: `${IMAGE_TWO_COLUMNS_RIGHT_CLASS}`},
+    { assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, pictureName: 'picture-001.jpg', pictureLegend: null, imageContainerClass: `${IMAGE_TWO_COLUMNS_LEFT_CLASS}`},
+    { assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, pictureName: 'picture-002.jpg', pictureLegend: null, imageContainerClass: `${IMAGE_TWO_COLUMNS_RIGHT_CLASS}`},
   ];
 
   projectTextualDatas = {
@@ -25,7 +25,7 @@ export class BellevilleShowroomComponent implements OnInit {
       'le thème &#171; Bestiaire moderne &#171;. <br/><br/>' +
       'L’objectif était d’inviter à la création, les habitants du quartier, dans un esprit convivial.</span>',
     contextTitle: '<span>Commanditaire</span>',
-    contextDetails: '<span>Artame Gallery</span>',
+    contextDetails: '<span>Artame Gallery - Projet de groupe</span>',
     missionsTitle: '<span>Missions</span>',
     missionsDetails: '<span>Création et organisation d\'un atelier participatif <br/>' +
       'Création de support de communication (flyers)</span>',

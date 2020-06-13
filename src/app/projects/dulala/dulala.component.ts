@@ -13,26 +13,24 @@ export class DulalaComponent implements OnInit {
   headerImageData = {assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, imageName: 'header.jpg'};
 
   imageDatas = [
-    { assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, pictureName: 'picture-001.jpg', imageContainerClass: `${IMAGE_FULL_CLASS}`},
-    { assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, pictureName: 'picture-002.jpg', imageContainerClass: `${IMAGE_FULL_CLASS}`},
+    { assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, pictureName: 'picture-001.jpg', pictureLegend: null, imageContainerClass: `${IMAGE_FULL_CLASS}`},
+    { assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, pictureName: 'picture-002.jpg', pictureLegend: null, imageContainerClass: `${IMAGE_FULL_CLASS}`},
   ];
 
   projectTextualDatas = {
     title: '<span>Catalogue de formations et divers supports de communication</span>',
     subtitle: '<span>(en cours)</span>',
-    description: '<span>&#171; Les éditions extensibles ont pour objet de recherche la transversalité entre art contemporain <br/>' +
-      'et littérature. Elles rassemblent des artistes-écrivains au sein de publications et d’expositions <br/>' +
-      'littéraires et explorent les enjeux de l’écriture, du récit et de la fiction dans l’art contemporain. &#187; <br/><br/>' +
-      'Réalité Parallèle est une micro-édition, réalisé en partenariat avec Les éditions extensibles, <br/>' +
-      'pour la collection « Au Fil de l’Ourcq ». <br/><br/>' +
-      'Au fil de cet ouvrage, découvrez par le prisme des reflets de l\'eau, le paysage urbain qui borde<br/>' +
-      'le canal. Laissez vous plongez dans un univers poétique et onirique d\'une réalité parallèle...</span>',
+    description: '<span>D\'Une Langue A L\'Autre est une association loi 1901 qui a pour objet de promouvoir une éducation <br/>' +
+    'ouverte sur les langues, quelles qu\'elles soient. Pour faciliter la découverte des langues et cultures <br/>' +
+    'd\'ici et d’ailleurs, DULALA propose des ateliers pour les enfants et des formations ou ressources <br/>' +
+    'pédagogiques pour les professionnels de l’Education. Cette éducation à la diversité des langues <br/>' +
+    'et cultures permet de favoriser le vivre ensemble. <br/><br/>' +
+    'Dans le cadre d\'un stage, réalisation du catalogue de formation 2020-2021 et divers supports de <br/>' +
+    'communication, en respectant la charte graphique (V. et R. Baur, M. Maione) de l\'association.</span>',
     contextTitle: '<span>Commanditaire</span>',
-    contextDetails: '<span>Les éditions extensibles</span>',
+    contextDetails: '<span>DULALA</span>',
     missionsTitle: '<span>Missions</span>',
-    missionsDetails: '<span>Création du contenu rédactionnel <br/>' +
-      'Création du contenu visuel, illustration<br/>' +
-      'Mise en page</span>',
+    missionsDetails: '<span>Mise en page</span>',
 
   };
 

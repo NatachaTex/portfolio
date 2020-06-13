@@ -18,12 +18,12 @@ export class ParallelRealitiesComponent implements OnInit {
   headerImageData = {assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, imageName: 'header.jpg'};
 
   imageDatas = [
-    { assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, pictureName: 'picture-001.jpg', imageContainerClass: `${IMAGE_FULL_CLASS}`},
-    { assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, pictureName: 'picture-002.jpg', imageContainerClass: `${IMAGE_FULL_CLASS}`},
-    { assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, pictureName: 'picture-003.jpg', imageContainerClass: `${IMAGE_FULL_CLASS}`},
-    { assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, pictureName: 'picture-004.jpg', imageContainerClass: `${IMAGE_TWO_COLUMNS_LEFT_CLASS}`},
-    { assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, pictureName: 'picture-005.jpg', imageContainerClass: `${IMAGE_TWO_COLUMNS_RIGHT_CLASS}`},
-    { assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, pictureName: 'picture-006.jpg', imageContainerClass: `${IMAGE_FULL_CLASS}`},
+    { assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, pictureName: 'picture-001.jpg', pictureLegend: null, imageContainerClass: `${IMAGE_FULL_CLASS}`},
+    { assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, pictureName: 'picture-002.jpg', pictureLegend: null, imageContainerClass: `${IMAGE_FULL_CLASS}`},
+    { assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, pictureName: 'picture-003.jpg', pictureLegend: null, imageContainerClass: `${IMAGE_FULL_CLASS}`},
+    { assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, pictureName: 'picture-004.jpg', pictureLegend: null, imageContainerClass: `${IMAGE_TWO_COLUMNS_LEFT_CLASS}`},
+    { assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, pictureName: 'picture-005.jpg', pictureLegend: null, imageContainerClass: `${IMAGE_TWO_COLUMNS_RIGHT_CLASS}`},
+    { assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, pictureName: 'picture-006.jpg', pictureLegend: null, imageContainerClass: `${IMAGE_FULL_CLASS}`},
   ];
 
   projectTextualDatas = {

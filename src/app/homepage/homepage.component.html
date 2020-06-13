@@ -17,12 +17,15 @@
         </span>
       </div>
       <ngx-masonry class="container--project-items" [options]="masonryOptions">
-        <div ngxMasonryItem class="masonry-item" *ngFor="let item of masonryItems">
-          <div class="item-container" [routerLink]="isDesktop ? item.routerLinkName : []">
+        <div ngxMasonryItem class="masonry-item"  [prepend]="false" *ngFor="let item of masonryItems">
+          <div class="item-container" [routerLink]="isDesktop ?
+          item.routerLinkName :
+          []">
             <img [src]="'./assets/imgs/projects/thumbnails/'+item.imageName+'.jpg'" />
             <div class="mask-info">
-              <span class="title">{{item.title}}</span>
-              <span class="know-more" *ngIf="!isDesktop" [routerLink]="item.routerLinkName">En
+              <span class="title" [innerHTML]="item.title"></span>
+              <span class="know-more" *ngIf="!isDesktop"
+                    [routerLink]="item.routerLinkName ? item.routerLinkName : null">En
                 savoir plus</span>
               <span class="details">
                 <span *ngIf="item.place">{{item.place}},<br/></span>

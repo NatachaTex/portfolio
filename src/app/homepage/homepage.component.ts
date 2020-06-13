@@ -20,7 +20,7 @@ export class HomepageComponent implements OnInit {
 
   private initialProjectDataSource = [
     {
-      title: 'Catalogue de formations & divers supports de communication',
+      title: '<span>Catalogue de formations & divers supports de communication</span>',
       place: 'Dulala',
       date: '2020',
       projectType: 'print',
@@ -28,7 +28,7 @@ export class HomepageComponent implements OnInit {
       routerLinkName: '/projets/dulala'
     },
     {
-      title: 'Campagne de sensibilisation à l\'addiction aux achats',
+      title: '<span>Campagne de sensibilisation <br/>à l\'addiction aux achats</span>',
       place: null,
       date: '2020',
       projectType: 'print',
@@ -36,23 +36,23 @@ export class HomepageComponent implements OnInit {
       routerLinkName: '/projets/'
     },
     {
-      title: 'Évènement 400 ans de La Fontaine',
+      title: '<span>Évènement 400 ans de La Fontaine</span>',
       place: 'Château-Thierry',
       date: '2020',
       projectType: 'print',
       imageName: 'lafontaine_thumb',
-      routerLinkName: '/projets/'
+      routerLinkName: '/projets/la-fontaine'
     },
     {
-      title: 'Naming & identité visuelle',
+      title: '<span>Naming & identité visuelle</span>',
       place: 'Écobul',
       date: '2019',
       projectType: 'visual',
       imageName: 'ecocotte_thumb',
-      routerLinkName: '/projets/'
+      routerLinkName: null
     },
     {
-      title: 'Identité visuelle & charte graphique',
+      title: '<span>Identité visuelle & <br/>charte graphique</span>',
       place: 'Cité du développement durable',
       date: '2019',
       projectType: 'visual',
@@ -60,7 +60,7 @@ export class HomepageComponent implements OnInit {
       routerLinkName: 'projets/cite-developpement-durable'
     },
     {
-      title: 'Réalité Parallèle micro-édition',
+      title: '<span>Réalité Parallèle micro-édition</span>',
       place: 'Les éditions extensibles',
       date: '2019',
       projectType: 'edit',
@@ -68,7 +68,7 @@ export class HomepageComponent implements OnInit {
       routerLinkName: '/projets/realite-parallele'
     },
     {
-      title: 'JPO des ateliers d\'artistes de Belleville',
+      title: '<span>JPO des ateliers d\'artistes<br/> de Belleville</span>',
       place: 'Artame Gallery',
       date: '2018',
       projectType: 'print',
@@ -89,8 +89,8 @@ export class HomepageComponent implements OnInit {
   };
 
   constructor( private deviceService: DeviceDetectorService) {
-    this.masonryItems = this.initialProjectDataSource;
     this.isDesktop = deviceService.isDesktop();
+    this.masonryItems = this.initialProjectDataSource;
   }
 
   ngOnInit() {

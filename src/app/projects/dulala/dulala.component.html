@@ -32,8 +32,10 @@
       </div>
       <div class="project-container--images">
         <div *ngFor="let imageData of imageDatas" class="image-gutterer"
-             [ngClass]="imageData.imageContainerClass">
+             [ngClass]="[imageData.imageContainerClass, imageData.pictureLegend ? 'has-legend': '']">
           <img [src]="imageData.assetProjectPath + imageData.pictureName">
+          <span class="picture-legend" *ngIf="imageData.pictureLegend"
+                [innerHTML]="imageData.pictureLegend"></span>
         </div>
       </div>
       <div class="nav-button nav-button__inverted" routerLink="/">Retour</div>

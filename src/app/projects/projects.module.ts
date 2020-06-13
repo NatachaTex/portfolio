@@ -6,6 +6,7 @@ import {SharedModule} from '../shared/shared.module';
 import { ParallelRealitiesComponent } from './parallel-realities/parallel-realities.component';
 import { BellevilleShowroomComponent } from './belleville-showroom/belleville-showroom.component';
 import { DulalaComponent } from './dulala/dulala.component';
+import { LaFontaineComponent } from './la-fontaine/la-fontaine.component';
 
 const routes: Routes = [
   {
@@ -23,11 +24,15 @@ const routes: Routes = [
   {
     path: 'dulala',
     component: DulalaComponent
+  },
+  {
+    path: 'la-fontaine',
+    component: LaFontaineComponent
   }
 ];
 
 @NgModule({
-  declarations: [SustainableForumComponent, ParallelRealitiesComponent, BellevilleShowroomComponent, DulalaComponent],
+  declarations: [SustainableForumComponent, ParallelRealitiesComponent, BellevilleShowroomComponent, DulalaComponent, LaFontaineComponent],
   imports: [
     CommonModule,
     SharedModule,

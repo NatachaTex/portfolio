@@ -68,7 +68,7 @@
             span {
               font-family: Roboto;
               font-size: 34px;
-              font-weight: bold;
+              font-weight: 500;
             }
           }
 
@@ -181,7 +181,31 @@
               }
             }
 
-            .image-full {
+            @media screen and (min-width: 1050px){
+              .has-legend {
+                flex-wrap: wrap;
+                img {
+                  flex: 0 0 100%;
+                }
+
+                .picture-legend {
+                  font-family: Montserrat;
+                  font-size: 15px;
+                  padding-top: 10px;
+                  padding-left: 15px;
+                }
+              }
+            }
+
+            @media screen and (max-width: 1049px) {
+              .has-legend {
+                .picture-legend {
+                  display: none;
+                }
+              }
+            }
+
+              .image-full {
               img {
                 max-width: 1170px;
                 width: 100%;
@@ -199,10 +223,14 @@
               display: flex;
               justify-content: center;
               align-content: center;
+              flex: 0 0 100%;
             }
 
             .image-two-columns {
               &__left, &__right {
+                object-fit: cover;
+                max-height: 730px;
+
                 @media screen and (max-width: 1049px){
                   display: flex;
                   justify-content: center;
