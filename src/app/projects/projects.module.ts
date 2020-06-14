@@ -7,6 +7,7 @@ import { ParallelRealitiesComponent } from './parallel-realities/parallel-realit
 import { BellevilleShowroomComponent } from './belleville-showroom/belleville-showroom.component';
 import { DulalaComponent } from './dulala/dulala.component';
 import { LaFontaineComponent } from './la-fontaine/la-fontaine.component';
+import { BuyingAddictionComponent } from './buying-addiction/buying-addiction.component';
 
 const routes: Routes = [
   {
@@ -28,11 +29,22 @@ const routes: Routes = [
   {
     path: 'la-fontaine',
     component: LaFontaineComponent
+  },
+  {
+    path: 'addiction-achats',
+    component: BuyingAddictionComponent
   }
 ];
 
 @NgModule({
-  declarations: [SustainableForumComponent, ParallelRealitiesComponent, BellevilleShowroomComponent, DulalaComponent, LaFontaineComponent],
+  declarations: [
+    SustainableForumComponent,
+    ParallelRealitiesComponent,
+    BellevilleShowroomComponent,
+    DulalaComponent,
+    LaFontaineComponent,
+    BuyingAddictionComponent
+  ],
   imports: [
     CommonModule,
     SharedModule,

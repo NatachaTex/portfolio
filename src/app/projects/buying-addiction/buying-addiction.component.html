@@ -1,0 +1,50 @@
+<div id="project-page">
+  <section class="image-header full-width">
+    <img
+      [src]="headerImageData.assetProjectPath + headerImageData.imageName"
+      [style]="headerImageData.imageObjectPositionLeftSidePercentage ? 'object-position: '
+      + headerImageData.imageObjectPositionLeftSidePercentage : ''"
+      alt="header image"
+    >
+    <div class="quality-mask"></div>
+    <div class="nav-button-container">
+      <div class="nav-button
+        nav-button__inverted
+        nav-button__white
+        nav-button__background-fade"
+           routerLink="/">
+        Retour
+      </div>
+    </div>
+  </section>
+  <section class="body">
+    <div class="container">
+      <div class="project-title" [ngClass]="projectTextualDatas.subtitle ? 'has-subtitle' : ''"
+           [innerHTML]="projectTextualDatas.title"></div>
+      <div class="project-subtitle" *ngIf="projectTextualDatas.subtitle" [innerHTML]="projectTextualDatas.subtitle"></div>
+      <div class="project-container--infos">
+        <div class="project--description" [innerHTML]="projectTextualDatas.description"></div>
+        <div class="project--additionnals">
+          <div class="additionnals--context">
+            <div class="context--title" [innerHTML]="projectTextualDatas.contextTitle"></div>
+            <div class="context--content" [innerHTML]="projectTextualDatas.contextDetails"></div>
+          </div>
+          <div class="additionnals--missions">
+            <div class="missions--title" [innerHTML]="projectTextualDatas.missionsTitle"></div>
+            <div class="missions--content" [innerHTML]="projectTextualDatas.missionsDetails"></div>
+          </div>
+        </div>
+      </div>
+      <div class="project-container--images">
+        <div *ngFor="let imageData of imageDatas" class="image-gutterer"
+             [ngClass]="[imageData.imageContainerClass, imageData.pictureLegend ? 'has-legend': '']">
+          <img [src]="imageData.assetProjectPath + imageData.pictureName" alt="project image"/>
+          <span class="picture-legend" *ngIf="imageData.pictureLegend"
+                [innerHTML]="imageData.pictureLegend"></span>
+        </div>
+      </div>
+      <div class="nav-button nav-button__inverted" routerLink="/">Retour</div>
+    </div>
+  </section>
+  <app-footer></app-footer>
+</div>

@@ -33,7 +33,7 @@ export class HomepageComponent implements OnInit {
       date: '2020',
       projectType: ['print'],
       imageName: 'hyperconso_thumb',
-      routerLinkName: '/projets/'
+      routerLinkName: '/projets/addiction-achats'
     },
     {
       title: '<span>Évènement 400 ans de La Fontaine</span>',
