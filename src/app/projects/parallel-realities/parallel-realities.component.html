@@ -4,6 +4,7 @@
       [src]="headerImageData.assetProjectPath + headerImageData.imageName"
       [style]="headerImageData.imageObjectPositionLeftSidePercentage ? 'object-position: '
       + headerImageData.imageObjectPositionLeftSidePercentage : ''"
+      alt="header image"
     >
     <div class="quality-mask"></div>
     <div class="nav-button-container">
@@ -37,7 +38,7 @@
       <div class="project-container--images">
         <div *ngFor="let imageData of imageDatas" class="image-gutterer"
              [ngClass]="[imageData.imageContainerClass, imageData.pictureLegend ? 'has-legend': '']">
-          <img [src]="imageData.assetProjectPath + imageData.pictureName">
+          <img [src]="imageData.assetProjectPath + imageData.pictureName" alt="project image"/>
           <span class="picture-legend" *ngIf="imageData.pictureLegend"
                 [innerHTML]="imageData.pictureLegend"></span>
         </div>
