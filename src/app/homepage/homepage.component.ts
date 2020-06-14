@@ -12,10 +12,10 @@ export class HomepageComponent implements OnInit {
 
   public menuItems = [
     { name: 'Tout', projectType: 'all', isActive: true },
-    { name: 'Édition', projectType: 'edit', isActive: false },
     { name: 'Identité visuelle', projectType: 'visual', isActive: false },
+    { name: 'Édition', projectType: 'edit', isActive: false },
+    { name: 'Évènement', projectType: 'event', isActive: false },
     { name: 'Print', projectType: 'print', isActive: false },
-    // { name: 'Digital', projectType: 'tech', isActive: false },
   ];
 
   private initialProjectDataSource = [
@@ -23,7 +23,7 @@ export class HomepageComponent implements OnInit {
       title: '<span>Catalogue de formations & divers supports de communication</span>',
       place: 'Dulala',
       date: '2020',
-      projectType: 'print',
+      projectType: ['print'],
       imageName: 'dulala_thumb',
       routerLinkName: '/projets/dulala'
     },
@@ -31,7 +31,7 @@ export class HomepageComponent implements OnInit {
       title: '<span>Campagne de sensibilisation <br/>à l\'addiction aux achats</span>',
       place: null,
       date: '2020',
-      projectType: 'print',
+      projectType: ['print'],
       imageName: 'hyperconso_thumb',
       routerLinkName: '/projets/'
     },
@@ -39,7 +39,7 @@ export class HomepageComponent implements OnInit {
       title: '<span>Évènement 400 ans de La Fontaine</span>',
       place: 'Château-Thierry',
       date: '2020',
-      projectType: 'print',
+      projectType: ['print', 'event'],
       imageName: 'lafontaine_thumb',
       routerLinkName: '/projets/la-fontaine'
     },
@@ -47,7 +47,7 @@ export class HomepageComponent implements OnInit {
       title: '<span>Naming & identité visuelle</span>',
       place: 'Écobul',
       date: '2019',
-      projectType: 'visual',
+      projectType: ['visual'],
       imageName: 'ecocotte_thumb',
       routerLinkName: null
     },
@@ -55,7 +55,7 @@ export class HomepageComponent implements OnInit {
       title: '<span>Identité visuelle & <br/>charte graphique</span>',
       place: 'Cité du développement durable',
       date: '2019',
-      projectType: 'visual',
+      projectType: ['visual'],
       imageName: 'cdd_thumb',
       routerLinkName: 'projets/cite-developpement-durable'
     },
@@ -63,7 +63,7 @@ export class HomepageComponent implements OnInit {
       title: '<span>Réalité Parallèle micro-édition</span>',
       place: 'Les éditions extensibles',
       date: '2019',
-      projectType: 'edit',
+      projectType: ['edit'],
       imageName: 'ourcq_thumb',
       routerLinkName: '/projets/realite-parallele'
     },
@@ -71,7 +71,7 @@ export class HomepageComponent implements OnInit {
       title: '<span>JPO des ateliers d\'artistes<br/> de Belleville</span>',
       place: 'Artame Gallery',
       date: '2018',
-      projectType: 'print',
+      projectType: ['print', 'event'],
       imageName: 'artame_thumb',
       routerLinkName: '/projets/jpo-ateliers-belleville'
     },
@@ -110,7 +110,7 @@ export class HomepageComponent implements OnInit {
 
 
     this.masonryItems = this.initialProjectDataSource.filter((project) => {
-      return project.projectType === projectTypeToShow;
+      return project.projectType.includes(projectTypeToShow);
     });
 
     if (this.masonryItems.length === 0) {

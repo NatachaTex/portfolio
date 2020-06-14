@@ -9,15 +9,49 @@ const IMAGE_DIRECTORY_PATH = './assets/imgs/projects/la-fontaine/';
   templateUrl: './la-fontaine.component.html',
 })
 export class LaFontaineComponent implements OnInit {
-  headerImageData = {assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, imageName: 'header.jpg'};
+  headerImageData = {
+    assetProjectPath: `${IMAGE_DIRECTORY_PATH}`,
+    imageName: 'header.jpg',
+    imageObjectPositionLeftSidePercentage: '77%'
+  };
 
   imageDatas = [
-    { assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, pictureName: 'picture-001.jpg', pictureLegend: 'Signalétique du parcours', imageContainerClass: `${IMAGE_TWO_COLUMNS_LEFT_CLASS}`},
-    { assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, pictureName: 'picture-002.jpg', pictureLegend: null, imageContainerClass: `${IMAGE_TWO_COLUMNS_RIGHT_CLASS}`},
-    { assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, pictureName: 'picture-003.jpg', pictureLegend: 'Dépliant guide du parcours recto', imageContainerClass: `${IMAGE_FULL_CLASS}`},
-    { assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, pictureName: 'picture-004.jpg', pictureLegend: 'Dépliant guide du parcours verso', imageContainerClass: `${IMAGE_FULL_CLASS}`},
-    { assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, pictureName: 'picture-005.jpg', pictureLegend: 'Affiches annonçant l\'évènement', imageContainerClass: `${IMAGE_TWO_COLUMNS_LEFT_CLASS}`},
-    { assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, pictureName: 'picture-006.jpg', pictureLegend: null, imageContainerClass: `${IMAGE_TWO_COLUMNS_RIGHT_CLASS}`},
+    {
+      assetProjectPath: `${IMAGE_DIRECTORY_PATH}`,
+      pictureName: 'picture-001.jpg',
+      pictureLegend: 'Signalétique du parcours',
+      imageContainerClass: `${IMAGE_TWO_COLUMNS_LEFT_CLASS}`
+    },
+    {
+      assetProjectPath: `${IMAGE_DIRECTORY_PATH}`,
+      pictureName: 'picture-002.jpg',
+      pictureLegend: null,
+      imageContainerClass: `${IMAGE_TWO_COLUMNS_RIGHT_CLASS}`
+    },
+    {
+      assetProjectPath: `${IMAGE_DIRECTORY_PATH}`,
+      pictureName: 'picture-003.jpg',
+      pictureLegend: 'Dépliant guide du parcours recto',
+      imageContainerClass: `${IMAGE_FULL_CLASS}`
+    },
+    {
+      assetProjectPath: `${IMAGE_DIRECTORY_PATH}`,
+      pictureName: 'picture-004.jpg',
+      pictureLegend: 'Dépliant guide du parcours verso',
+      imageContainerClass: `${IMAGE_FULL_CLASS}`
+    },
+    {
+      assetProjectPath: `${IMAGE_DIRECTORY_PATH}`,
+      pictureName: 'picture-005.jpg',
+      pictureLegend: 'Affiches annonçant l\'évènement',
+      imageContainerClass: `${IMAGE_TWO_COLUMNS_LEFT_CLASS}`
+    },
+    {
+      assetProjectPath: `${IMAGE_DIRECTORY_PATH}`,
+      pictureName: 'picture-006.jpg',
+      pictureLegend: null,
+      imageContainerClass: `${IMAGE_TWO_COLUMNS_RIGHT_CLASS}`
+    },
   ];
 
   projectTextualDatas = {

@@ -10,7 +10,11 @@ const IMAGE_DIRECTORY_PATH = './assets/imgs/projects/sustainable-forum/';
 })
 export class SustainableForumComponent implements OnInit {
 
-  headerImageData = {assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, imageName: 'header.jpg'};
+  headerImageData = {
+    assetProjectPath: `${IMAGE_DIRECTORY_PATH}`,
+    imageName: 'header.jpg',
+    imageObjectPositionLeftSidePercentage: null
+  };
 
   imageDatas = [
     { assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, pictureName: 'picture-001.jpg', pictureLegend: null, imageContainerClass: `${IMAGE_SMALL_CLASS} ${IMAGE_CENTERED_CLASS}`},

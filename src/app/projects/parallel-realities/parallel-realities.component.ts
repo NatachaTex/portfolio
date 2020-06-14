@@ -15,7 +15,11 @@ const IMAGE_DIRECTORY_PATH = './assets/imgs/projects/parallel-realities/';
 })
 export class ParallelRealitiesComponent implements OnInit {
 
-  headerImageData = {assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, imageName: 'header.jpg'};
+  headerImageData = {
+    assetProjectPath: `${IMAGE_DIRECTORY_PATH}`,
+    imageName: 'header.jpg',
+    imageObjectPositionLeftSidePercentage: null
+  };
 
   imageDatas = [
     { assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, pictureName: 'picture-001.jpg', pictureLegend: null, imageContainerClass: `${IMAGE_FULL_CLASS}`},

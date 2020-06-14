@@ -10,11 +10,25 @@ const IMAGE_DIRECTORY_PATH = './assets/imgs/projects/belleville-showroom/';
 })
 export class BellevilleShowroomComponent implements OnInit {
 
-  headerImageData = {assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, imageName: 'header.jpg'};
+  headerImageData = {
+    assetProjectPath: `${IMAGE_DIRECTORY_PATH}`,
+    imageName: 'header.jpg',
+    imageObjectPositionLeftSidePercentage: '15%'
+  };
 
   imageDatas = [
-    { assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, pictureName: 'picture-001.jpg', pictureLegend: null, imageContainerClass: `${IMAGE_TWO_COLUMNS_LEFT_CLASS}`},
-    { assetProjectPath: `${IMAGE_DIRECTORY_PATH}`, pictureName: 'picture-002.jpg', pictureLegend: null, imageContainerClass: `${IMAGE_TWO_COLUMNS_RIGHT_CLASS}`},
+    {
+      assetProjectPath: `${IMAGE_DIRECTORY_PATH}`,
+      pictureName: 'picture-001.jpg',
+      pictureLegend: null,
+      imageContainerClass: `${IMAGE_TWO_COLUMNS_LEFT_CLASS}`
+    },
+    {
+      assetProjectPath: `${IMAGE_DIRECTORY_PATH}`,
+      pictureName: 'picture-002.jpg',
+      pictureLegend: null,
+      imageContainerClass: `${IMAGE_TWO_COLUMNS_RIGHT_CLASS}`
+    },
   ];
 
   projectTextualDatas = {

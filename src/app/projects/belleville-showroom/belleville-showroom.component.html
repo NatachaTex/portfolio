@@ -1,6 +1,10 @@
 <div id="project-page">
   <section class="image-header full-width">
-    <img [src]="headerImageData.assetProjectPath + headerImageData.imageName">
+    <img
+      [src]="headerImageData.assetProjectPath + headerImageData.imageName"
+      [style]="headerImageData.imageObjectPositionLeftSidePercentage ? 'object-position: '
+      + headerImageData.imageObjectPositionLeftSidePercentage : ''"
+    >
     <div class="quality-mask"></div>
     <div class="nav-button-container">
       <div class="nav-button
