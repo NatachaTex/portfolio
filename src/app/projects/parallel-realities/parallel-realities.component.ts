@@ -39,7 +39,7 @@ export class ParallelRealitiesComponent implements OnInit {
       'Réalité Parallèle est une micro-édition, réalisé en partenariat avec Les éditions extensibles, <br/>' +
       'pour la collection « Au Fil de l’Ourcq ». <br/><br/>' +
       'Au fil de cet ouvrage, découvrez par le prisme des reflets de l\'eau, le paysage urbain qui borde<br/>' +
-      'le canal. Laissez vous plongez dans un univers poétique et onirique d\'une réalité parallèle...</span>',
+      'le canal. Laissez vous plonger dans l\'univers poétique et onirique d\'une réalité parallèle...</span>',
     contextTitle: '<span>Commanditaire</span>',
     contextDetails: '<span>Les éditions extensibles</span>',
     missionsTitle: '<span>Missions</span>',

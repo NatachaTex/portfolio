@@ -25,8 +25,8 @@ export class DulalaComponent implements OnInit {
     title: '<span>Catalogue de formations et divers supports de communication</span>',
     subtitle: '<span>(en cours)</span>',
     description: '<span>D\'Une Langue A L\'Autre est une association loi 1901 qui a pour objet de promouvoir une éducation <br/>' +
-    'ouverte sur les langues, quelles qu\'elles soient. Pour faciliter la découverte des langues et cultures <br/>' +
-    'd\'ici et d’ailleurs, DULALA propose des ateliers pour les enfants et des formations ou ressources <br/>' +
+    'ouverte sur les langues. Pour faciliter la découverte des langues et cultures d\'ici <br/>' +
+    'et d’ailleurs, DULALA propose des ateliers pour les enfants et des formations ou ressources <br/>' +
     'pédagogiques pour les professionnels de l’Education. Cette éducation à la diversité des langues <br/>' +
     'et cultures permet de favoriser le vivre ensemble. <br/><br/>' +
     'Dans le cadre d\'un stage, réalisation du catalogue de formation 2020-2021 et divers supports de <br/>' +

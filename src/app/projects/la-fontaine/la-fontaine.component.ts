@@ -70,7 +70,8 @@ export class LaFontaineComponent implements OnInit {
       'Appel à projet</span>',
     missionsTitle: '<span>Missions</span>',
     missionsDetails: '<span>Création d\'un parcours participatif<br/>' +
-      'Création de support de communication</span>',
+      'Création de support de communication<br/>' +
+      '(dépliants, affiches)</span>',
 
   };
 

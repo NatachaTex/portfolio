@@ -34,16 +34,16 @@ export class BuyingAddictionComponent implements OnInit {
     'aux caractères et difficultés de chacun. <br/><br/>' +
     'Cette campagne est tournée vers l\'idée de bonheur. Le message transmit est que la consomma- <br/>' +
     'tion ne rend pas heureux, elle est au contraire dans le cas de l\'addiction, une source de désillusion. <br/> ' +
-    'En effet, à travers l\'acte d\'achat les dépendants pense pouvoir soulager un mal être ou combler <br/>' +
-    'un manque, ors il ne fait qu\'aggraver leur situation. Le bonheur, les relations humaines sont des  <br/>' +
-    'choses qui ne s\'achètent pas.</span>',
+    'En effet, à travers l\'acte d\'achat les dépendants pensent pouvoir soulager un mal être ou combler <br/>' +
+    'un manque. Le bonheur, les relations humaines sont des choses qui ne s\'achètent pas.</span>',
     contextTitle: '<span>Commanditaire</span>',
-    contextDetails: '<span>Association Les débiteurs anonymes -<br/>' +
+    contextDetails: '<span>Les débiteurs anonymes -<br/>' +
       'Projet d\'étude</span>',
     missionsTitle: '<span>Missions</span>',
     missionsDetails: '<span>Création d\'une campagne <br/>' +
       'de sensibilisation (nom, slogan, univers)<br/>' +
-      'Création de support de communication</span>',
+      'Création de support de communication<br/>' +
+      '(dépliants, affiches, flyers)</span>',
 
   };
   constructor() { }

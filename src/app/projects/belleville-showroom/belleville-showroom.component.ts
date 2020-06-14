@@ -36,7 +36,7 @@ export class BellevilleShowroomComponent implements OnInit {
     subtitle: null,
     description: '<span>À l’occasion des journées portes ouvertes des ateliers d’artistes de Belleville, Artame Gallery<br/>' +
       'souhaitait, en parallèle de son exposition, proposer au visiteurs un atelier participatif sur<br/>' +
-      'le thème &#171; Bestiaire moderne &#171;. <br/><br/>' +
+      'le thème &#171; Bestiaire moderne &#187;. <br/><br/>' +
       'L’objectif était d’inviter à la création, les habitants du quartier, dans un esprit convivial.</span>',
     contextTitle: '<span>Commanditaire</span>',
     contextDetails: '<span>Artame Gallery - Projet de groupe</span>',
